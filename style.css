@@ -1,0 +1,196 @@
+/* ===== Body & Typography ===== */
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', sans-serif;
+  padding-bottom: 70px; /* Space for footer */
+}
+
+/* ===== Top Navigation Bar ===== */
+.top-bar {
+  background-color: #32807F;
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  color: #ffffff;
+}
+
+.top-bar .brand {
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #fecd43;
+}
+
+.top-bar i {
+  color: #ffffff;
+}
+
+/* ===== Form Section Styling ===== */
+.form-section {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 500px;
+  margin: 20px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* ===== Yellow Button Style ===== */
+.btn-yellow {
+  background-color: #fecd43;
+  color: #000;
+}
+
+.btn-yellow:hover {
+  background-color: #fbc02d;
+  color: #000;
+}
+
+/* ===== Group List Section ===== */
+.group-section {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 0 16px;
+}
+
+.group-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 12px;
+}
+
+.group-card small {
+  color: #888;
+}
+
+/* ===== Add Button (Plus Icon Style) ===== */
+.add-btn {
+  background-color: #be2b2b;
+  color: white;
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-btn:hover {
+  background-color: #a42424;
+}
+
+/* ===== Group Details View Style ===== */
+.group-details {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.group-details .title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.group-details small {
+  color: #555;
+}
+
+/* ===== Filter Bar Section ===== */
+.filter-bar {
+  background-color: #7D2139; /* Main filter background */
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  gap: 1rem; /* space between filters */
+  flex-wrap: wrap; /* responsive layout */
+}
+
+.filter-group {
+  position: relative;
+  flex: 1 1 45%; /* Responsive flex basis */
+}
+
+.filter-group .form-select {
+  background-color: #fff;
+  color: #000;
+  padding-left: 2.5rem; /* space for icon */
+  border: 1px solid #fff;
+  width: 100%;
+}
+
+.filter-group .form-select:focus {
+  box-shadow: none;
+  border-color: #fec933;
+}
+
+/* Left icon inside the select field */
+.filter-group .icon-left {
+  position: absolute;
+  top: 50%;
+  left: 0.75rem;
+  transform: translateY(-50%);
+  color: #7D2139;
+  font-size: 1rem;
+  z-index: 2;
+}
+
+/* ===== Star Badge ===== */
+.star-badge {
+  background-color: #FEC933;
+  color: white;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+/* Yellow triangle (speech tail) under star — now aligned to right */
+.star-badge::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 6px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 0 solid transparent;
+  border-top: 6px solid #FEC933;
+}
+.recommendationstext a{
+  color: #7F7F7F;
+  font-size: 18px;
+  font-weight: 700;
+}
+/* ===== Footer Navigation Bar ===== */
+.footer-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #32807F;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  z-index: 99;
+}
+
+.footer-bar i {
+  font-size: 20px;
+  color: #fff;
+}
+
+/* ===== Optional Utility Class ===== */
+.text-white-50 {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
